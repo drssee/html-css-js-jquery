@@ -80,6 +80,7 @@ $(document).ready(function () {
     });
 
 });
+
 $(window).on('load', function() {
         //메인이미지
         var slide = $(".bxslider").bxSlider({

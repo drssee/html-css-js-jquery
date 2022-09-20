@@ -21,6 +21,7 @@ $(document).ready(function(){
         $("#main_con5_wrap").css("z-index","200");  
     });
 
+    //전체선택 체크박스
     $("#chkAll").change(function(){
         var result = $("#chkAll").prop("checked");
         if(result) {
@@ -31,6 +32,8 @@ $(document).ready(function(){
         }
     });
 
+
+    //전송버튼
     $("button[type='submit']").click(function(){
         for(var i =0 ; i<3;i++){
             if(!$(".checkBtn input[type='checkbox']").eq(i).prop("checked")){

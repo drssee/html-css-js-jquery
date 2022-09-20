@@ -21,9 +21,30 @@ $(document).ready(function(){
             $("#main_con5_wrap").css("z-index","200");  
         });
 
+        //id pwd 입력창
         $(".id_pwd input").mouseover(function(){
             $(this).css("outline","1px solid black");
         }).mouseout(function(){
             $(this).css("outline","");
+        });
+
+        //input 아래 a태그
+        $(".a_menu a").mouseover(function(){
+            $(this).css("text-decoration","underline");
+        }).mouseout(function(){
+            $(this).css("text-decoration","");
+        });
+
+        //전송버튼
+        $("button[type='submit']").click(function(){
+            if($("#id").val()==""||$("#id").val().length<3||$("#id").val().length>12){
+               alert("아이디를 다시 입력해주세요")
+               return false;
+            }
+            else if($("#pwd").val()==""||$("#pwd").val().length<3||$("#pwd").val().length>12){
+                alert("비밀번호를 다시 입력해주세요")
+                return false;
+            }
+            alert("로그인 성공");
         });
 }); 

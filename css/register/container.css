@@ -8,6 +8,8 @@ body{
     width: 100%;
     height: 100%;
 }
+
+/*회원가입폼_상단(회원정보입력)*/
 #main_con5_wrap{
     width: 100%;
     min-width: 1920px;
@@ -25,7 +27,7 @@ body{
 #main_con5_wrap{
     z-index: 200;
 }
-/**/
+
 #main_con5 h2{
     font-size: 20px;
     margin-bottom: 50px;
@@ -33,7 +35,6 @@ body{
 .profile{
     width: 600px;
     height: 500px;
-    /* border:1px solid red; */
 }
 .profile div{
     width: 600px;
@@ -76,7 +77,6 @@ body{
     margin-right:5px;
 }
 #select{
-    /* display: block; */
     margin-top: 8px;
     margin-left: 15px;
     height: 35px;
@@ -96,8 +96,9 @@ body{
     font-size: 11px;
 }
 
-.clear::after{content: "";display: block;clear: both;}
+.clear::after{content:"";display:block;clear:both;}
 
+/*회원가입폼_하단(약관동의)*/
 .tos_wrap{
     width: 600px;
 }
@@ -117,6 +118,8 @@ body{
     margin-bottom:10px;
 }
 
+
+/*전송버튼*/
 button[type='submit']{
     font-size: 15px;
     display: block;
